@@ -20,7 +20,8 @@ radius = 150
 
 #Clock Outline
 
-canvas.create_oval(center_x - radius, center_y - radius, center_x + radius, center_y + radius, outline="#ffffff", width=4)
+canvas.create_oval(center_x - radius, center_y - radius, center_x + radius, center_y + radius, 
+                   outline="#ffffff", width=4)
 
 #This covers hour marks
 for i in range(12):
