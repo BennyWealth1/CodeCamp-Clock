@@ -6,9 +6,11 @@ class ClockView:
     def __init__(self, root, theme_colors):
         self.root = root
         self.theme = theme_colors
-        self.root.title("Cellyusis CodeCamp - Analog Clock (MVC)")
+        self.root.title("Cellyusis CodeCamp - Digital Clock (MVC)")
         self.root.geometry("420x520")
         self.root.config(bg=self.theme["bg"])
+        self.root.iconbitmap(r'C:\Users\miste\OneDrive\Desktop\TIME_CLOCK\images\clock_image.ico')
+
         self.school_label = tk.Label(root, text="CELLYUSIS CODECAMP",
                                      font=("Helvetica", 15, "bold"),
                                      fg=self.theme["fg"], bg=self.theme["bg"])
