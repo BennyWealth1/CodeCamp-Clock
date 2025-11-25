@@ -1,8 +1,8 @@
 # main.py
 import tkinter as tk
-from model import ClockModel
-from controller1 import ClockController
-from view1 import ClockView
+from models import ClockModel
+from controller import ClockController
+from view import ClockView
 from splash import SplashScreen  # Make sure you save the previous splash class as splash.py
 
 def start_main_app():
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     root.withdraw()  # Hide the root while splash shows
 
     # Splash screen with a 3-second duration
-    splash = SplashScreen(root, duration=3000, image_path="icon.png")
+    splash = SplashScreen(root, duration=3000, image_path="DGIF.gif")
 
     # Schedule the main app to start after splash duration
     root.after(3000, lambda: [splash.destroy(), start_main_app()])

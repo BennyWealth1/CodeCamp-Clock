@@ -17,7 +17,7 @@ class SplashScreen(tk.Toplevel):
         if image_path:
             try:
                 img = Image.open(image_path)
-                img = img.resize((100, 100), Image.LANCZOS)
+                img = img.resize((400, 240), Image.LANCZOS)
                 self.photo = ImageTk.PhotoImage(img)
                 self.icon_label = tk.Label(self, image=self.photo, bg="#2b2b2b")
                 self.icon_label.pack(pady=10)
